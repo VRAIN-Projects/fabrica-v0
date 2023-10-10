@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-worker',
@@ -6,9 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./worker.component.css']
 })
 export class WorkerComponent {
- color : string = 'black';
-
- setColor(color : string) {
-    this.color = color;
-  }
-}
+  @Input() color: string = 'black';}

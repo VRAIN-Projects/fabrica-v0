@@ -1,5 +1,11 @@
 .icon {
-    height: 50px;
-    width: auto;
+    height: auto;
+    width: 100%;
     padding: 7px;
+    background-color: blue !important;
+
+}
+
+.icon svg {
+    fill: red !important;
 }
