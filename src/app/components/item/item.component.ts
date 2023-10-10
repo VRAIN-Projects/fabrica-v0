@@ -10,4 +10,6 @@ export class ItemComponent {
 
   @Input() worker: Worker = new Worker();
 
+  constructor() {
+  }
 }

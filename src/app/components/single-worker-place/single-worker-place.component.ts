@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Worker } from '../../models/worker.model';
+import { WorkersService } from 'src/app/services/workers.service';
 
 
 @Component({
@@ -14,8 +15,12 @@ export class SingleWorkerPlaceComponent {
 
   singleWorker: Worker[] = [];
 
-  constructor() {
+  constructor(private workerService: WorkersService) {
+    
+  }
 
+  ngOnInit() {
+    this.singleWorker.push(this.worker);
   }
   
   drop(event: CdkDragDrop<string[]>) {
@@ -24,7 +29,7 @@ export class SingleWorkerPlaceComponent {
       moveItemInArray(this.singleWorker, event.previousIndex, event.currentIndex);
     } else {
       // move between lists
-     
+      this.workerService.changeList(this.worker);
     }
   }
 

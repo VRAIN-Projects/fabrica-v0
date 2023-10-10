@@ -9,9 +9,10 @@ import { Worker } from '../../models/worker.model';
 })
 export class SidebarComponent {
 
-  workers: Worker[] = []
+  workers: Worker[] = [];
 
   constructor(workerService: WorkersService){
     this.workers = workerService.getWorkers();
+
   }
 }
