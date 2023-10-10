@@ -12,7 +12,13 @@ export class MultipleWorkerPlaceComponent {
   workers : string []= ['red', 'green', 'blue']; 
   
   drop(event: CdkDragDrop<string[]>) {
-    moveItemInArray(this.workers, event.previousIndex, event.currentIndex);
+    if (event.container.id === event.previousContainer.id) {
+      // move inside same list
+      moveItemInArray(this.workers, event.previousIndex, event.currentIndex);
+    } else {
+      // move between lists
+      this.workers.push('black');
+    }
   }
 
   onWorkerMoved(worker: string) {

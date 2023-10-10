@@ -1,11 +1,13 @@
 <section 
     class="place" 
     cdkDropList
-    [cdkDropListData]="workers"
+    [cdkDropListData]="singleWorker"
     class="example-list"
-    (cdkDropListDropped)="drop($event)">
+    cdkDropListConnectedTo="multiple"
+    (cdkDropListDropped)="drop($event)"
+    id="single">
 
-    <app-worker [color]="worker" *ngFor="let worker of workers" cdkDrag>{{worker}} (workerMoved)="moveWorker($event)>
+    <app-worker [color]="worker" *ngFor="let worker of singleWorker" cdkDrag>{{worker}} (workerMoved)="moveWorker($event)>
 
     </app-worker>
 </section>

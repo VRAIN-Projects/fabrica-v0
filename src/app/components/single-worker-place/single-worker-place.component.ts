@@ -13,21 +13,19 @@ export class SingleWorkerPlaceComponent {
 
   @Output() workerMoved = new EventEmitter<string>();
 
-  workers: string[] = ['black'];
+  singleWorker: string[] = ['black'];
   
   drop(event: CdkDragDrop<string[]>) {
-    if (event.previousContainer === event.container) {
-      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+    if (event.container.id === event.previousContainer.id) {
+      // move inside same list
+      moveItemInArray(this.singleWorker, event.previousIndex, event.currentIndex);
     } else {
-      const worker = event.previousContainer.data[event.previousIndex];
-      this.moveWorker(worker);
+      // move between lists
+     
     }
   }
 
-  moveWorker(worker: string) {
-    worker = this.workers[0];
-    this.workerMoved.emit(worker);
-    this.workers = this.workers.filter(w => w !== worker);
-  }
+  
+
 
 }

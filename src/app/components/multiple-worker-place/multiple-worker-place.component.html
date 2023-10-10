@@ -2,11 +2,11 @@
     class="place" 
     cdkDropList
     cdkDropListOrientation="horizontal"
-    [cdkDropListData]="workers"
+    cdkDropListConnectedTo="single"
     class="example-list"
     (cdkDropListDropped)="drop($event)"
     (drop)="onWorkerMoved('black')"
-    >
+    id="multiple">
     
     <app-worker [color]="worker" *ngFor="let worker of workers" cdkDrag></app-worker>
 </section>
