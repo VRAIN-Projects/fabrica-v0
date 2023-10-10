@@ -1,0 +1,26 @@
+.place {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #ccc;
+    display: inline-flex;
+    padding: 10px;
+}
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .cdk-drag-preview-dragging {
+    opacity: 0;
+  }
+
+  .multi-worker {
+    margin: 5px 0px 5px 5px;
+  }

@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 import { CdkDrag, CdkDragDrop } from '@angular/cdk/drag-drop';
 
+//Create interface worker
 interface Worker {
   name: string;
 }
 
 @Component({
-  selector: 'app-worker-place',
-  templateUrl: './worker-place.component.html',
-  styleUrls: ['./worker-place.component.css']
+  selector: 'app-single-worker-place',
+  templateUrl: './single-worker-place.component.html',
+  styleUrls: ['./single-worker-place.component.css']
 })
-export class WorkerPlaceComponent {
+export class SingleWorkerPlaceComponent {
   workers: Worker[] = [
     { name: 'Worker 1' },  
   ];

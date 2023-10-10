@@ -8,8 +8,9 @@ import { ItemComponent } from './item/item.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FactoryComponent } from './factory/factory.component';
 import { TaskComponent } from './task/task.component';
-import { WorkerPlaceComponent } from './worker-place/worker-place.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { SingleWorkerPlaceComponent } from './single-worker-place/single-worker-place.component';
+import { MultipleWorkerPlaceComponent } from './multiple-worker-place/multiple-worker-place.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     SidebarComponent,
     FactoryComponent,
     TaskComponent,
-    WorkerPlaceComponent
+    SingleWorkerPlaceComponent,
+    MultipleWorkerPlaceComponent
   ],
   imports: [
     BrowserModule,
