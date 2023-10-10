@@ -2,11 +2,7 @@
 <div class="container sidebar">
     <div class="row">
         <div class="col-md-12">
-            <app-item></app-item>
-            <app-item ></app-item>
-            <app-item></app-item>
-            <app-item></app-item>
-            <app-item></app-item>
+            <app-item [worker]="worker" *ngFor="let worker of workers"></app-item>
         </div>
     </div>
 </div>

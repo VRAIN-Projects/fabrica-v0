@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Worker } from 'src/app/models/worker.model';
 
 @Component({
   selector: 'app-item',
@@ -7,6 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ItemComponent {
 
-  @Input() color: string = 'black';
+  @Input() worker: Worker = new Worker();
 
 }

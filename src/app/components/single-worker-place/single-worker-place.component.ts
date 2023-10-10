@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { Component, Input } from '@angular/core';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { Worker } from '../../models/worker.model';
 
 
 @Component({
@@ -9,7 +10,13 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
 })
 export class SingleWorkerPlaceComponent {
 
-  singleWorker: string[] = ['black'];
+  @Input() worker: Worker = new Worker();
+
+  singleWorker: Worker[] = [];
+
+  constructor() {
+
+  }
   
   drop(event: CdkDragDrop<string[]>) {
     if (event.container.id === event.previousContainer.id) {

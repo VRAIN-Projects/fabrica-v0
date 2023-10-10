@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { WorkersService } from 'src/app/services/workers.service';
+import { Worker } from '../../models/worker.model';
 
 @Component({
   selector: 'app-multiple-worker-place',
@@ -9,7 +11,11 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
 export class MultipleWorkerPlaceComponent {
   
 
-  workers : string []= ['red', 'green', 'blue']; 
+  workers : Worker[] = []; 
+
+  constructor(private workerService : WorkersService) {
+    this.workers = workerService.getWorkerTask1();
+  }
   
   drop(event: CdkDragDrop<string[]>) {
     if (event.container.id === event.previousContainer.id) {
@@ -17,16 +23,6 @@ export class MultipleWorkerPlaceComponent {
       moveItemInArray(this.workers, event.previousIndex, event.currentIndex);
     } else {
       // move between lists
-      this.workers.push('black');
     }
-  }
-
-  onWorkerMoved(worker: string) {
-    throw new Error('Method not implemented.');
-    this.workers.push(worker);
-  }
-
-  onItemDropped(event: CdkDragDrop<string[]>) {
-    throw new Error('Method not implemented.');
   }
 }
