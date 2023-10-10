@@ -6,4 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./worker.component.css']
 })
 export class WorkerComponent {
-  @Input() color: string = 'black';}
+  @Input() color: string = 'black';
+
+  constructor() { 
+    
+  }
+
+}

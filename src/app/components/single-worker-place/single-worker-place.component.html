@@ -1,3 +1,11 @@
-<section class="place">
-    <app-worker [color]="color" class="hide" cdkDrag cdkDragBoundary=".boundary" cdkDragPreview></app-worker>
+<section 
+    class="place" 
+    cdkDropList
+    [cdkDropListData]="workers"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+
+    <app-worker [color]="worker" *ngFor="let worker of workers" cdkDrag>{{worker}} (workerMoved)="moveWorker($event)>
+
+    </app-worker>
 </section>

@@ -1,7 +1,10 @@
-<section class="place">
-    <app-worker class="multi-worker hide" cdkDrag cdkDragBoundary=".boundary" cdkDragPreview></app-worker>
-    <app-worker class="multi-worker hide" cdkDrag cdkDragBoundary=".boundary" cdkDragPreview></app-worker>
-    <app-worker class="multi-worker hide" cdkDrag cdkDragBoundary=".boundary" cdkDragPreview></app-worker>
-    <app-worker class="multi-worker hide" cdkDrag cdkDragBoundary=".boundary" cdkDragPreview></app-worker>
-
+<section 
+    class="place" 
+    cdkDropList
+    [cdkDropListData]="workers"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)"
+    (drop)="onWorkerMoved('black')">
+    
+    <app-worker [color]="worker" *ngFor="let worker of workers" cdkDrag></app-worker>
 </section>

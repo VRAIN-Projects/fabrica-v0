@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { CdkDrag, CdkDragDrop } from '@angular/cdk/drag-drop';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+
 
 @Component({
   selector: 'app-single-worker-place',
@@ -10,27 +11,23 @@ export class SingleWorkerPlaceComponent {
 
   @Input() color: string = 'black';
 
-  onDrop(event: CdkDragDrop<Worker[]>) {
-    //hide the worker
-    const icon = document.getElementById("icon");
+  @Output() workerMoved = new EventEmitter<string>();
 
-    if (icon) {
-      icon.classList.add("hide");    
+  workers: string[] = ['black'];
+  
+  drop(event: CdkDragDrop<string[]>) {
+    if (event.previousContainer === event.container) {
+      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+    } else {
+      const worker = event.previousContainer.data[event.previousIndex];
+      this.moveWorker(worker);
     }
   }
 
-  onDrag(event: CdkDragDrop<Worker>) {
-    //show the worker
-
-
+  moveWorker(worker: string) {
+    worker = this.workers[0];
+    this.workerMoved.emit(worker);
+    this.workers = this.workers.filter(w => w !== worker);
   }
-  onDragStarted(event: CdkDrag) {
-    const icon = document.getElementById("icon");
-
-    if (icon) {
-      icon.classList.remove("hide");    
-    }
-  }
-
 
 }
