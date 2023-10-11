@@ -9,6 +9,8 @@ export class WorkersService {
 
   private workerAux: Worker = new Worker();
 
+  private workerSelected: Worker = new Worker();
+
   private workers: Worker[] = [];
   private workerTask1: Worker[] = [];
 
@@ -36,14 +38,16 @@ export class WorkersService {
     return this.workers;
   }
 
+  public setChangingWorker(worker : Worker) {
+    this.workerSelected = worker;
+  }
 
-
-  public changeList(worker: Worker) : void {
-    let position = this.workers.indexOf(worker)
-
-    if ( position == -1){
+  public changeList() : void {
+    let position = this.workers.indexOf(this.workerSelected)
+    //If we find the worker
+    if ( position != -1){
       //Add worker to workerplaceMultiple
-      this.workerTask1.push(worker);
+      this.workerTask1.push(this.workerSelected);
       //Remove the worker from workers
       this.workers.splice(position, 1);
     }

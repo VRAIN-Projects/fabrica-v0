@@ -14,7 +14,11 @@ export class MultipleWorkerPlaceComponent {
   workers : Worker[] = []; 
 
   constructor(private workerService : WorkersService) {
-    this.workers = workerService.getWorkerTask1();
+    
+  }
+
+  ngOnInit(){
+    this.workers = this.workerService.getWorkerTask1();
   }
   
   drop(event: CdkDragDrop<string[]>) {
@@ -22,7 +26,9 @@ export class MultipleWorkerPlaceComponent {
       // move inside same list
       moveItemInArray(this.workers, event.previousIndex, event.currentIndex);
     } else {
-      // move between lists
+      
+
+      this.workerService.changeList();
     }
   }
 }

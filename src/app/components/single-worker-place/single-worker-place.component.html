@@ -6,7 +6,7 @@
     cdkDropListConnectedTo="multiple"
     id="single">
 
-    <app-worker [color]="worker.color" *ngFor="let worker of singleWorker" cdkDrag>{{worker}} (workerMoved)="moveWorker($event)>
+    <app-worker [color]="worker.color" *ngFor="let worker of singleWorker" cdkDrag (cdkDragStarted)="selectWorker()">
 
     </app-worker>
 </section>

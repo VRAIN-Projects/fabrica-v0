@@ -28,9 +28,12 @@ export class SingleWorkerPlaceComponent {
       // move inside same list
       moveItemInArray(this.singleWorker, event.previousIndex, event.currentIndex);
     } else {
-      // move between lists
-      this.workerService.changeList(this.worker);
+
     }
+  }
+
+  selectWorker() {
+    this.workerService.setChangingWorker(this.worker);
   }
 
   
