@@ -18,17 +18,24 @@ export class WorkersService {
   constructor(
   ) {
     this.workerAux = new Worker();
-    this.workerAux.color = "red";
+    this.workerAux.color = "var(--azul-oscuro)";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
-    this.workerAux.color = "blue";
+    this.workerAux.color = "var(--azul-claro)";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
-    this.workerAux.color = "green";
+    this.workerAux.color = "var(--gris)";
     this.workers.push(this.workerAux);
 
+    this.workerAux = new Worker();
+    this.workerAux.color = "var(--rojo)";
+    this.workers.push(this.workerAux);
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "var(--verde)";
+    this.workers.push(this.workerAux);
   }
 
   public getWorkerTask (task: number) : Worker[] {
