@@ -3,7 +3,6 @@
     cdkDropList
     [cdkDropListData]="singleWorker"
     class="example-list"
-    cdkDropListConnectedTo="multiple"
     id="single">
 
     <app-worker [color]="worker.color" *ngFor="let worker of singleWorker" cdkDrag (cdkDragStarted)="selectWorker()">
