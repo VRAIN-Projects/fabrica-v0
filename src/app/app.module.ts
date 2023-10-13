@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WorkerComponent } from './components/worker/worker.component';
 import { ItemComponent } from './components/item/item.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { WorkersComponent } from './components/workers/workers.component';
 import { FactoryComponent } from './components/factory/factory.component';
 import { TaskComponent } from './components/task/task.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -15,9 +15,9 @@ import { MultipleWorkerPlaceComponent } from './components/multiple-worker-place
 @NgModule({
   declarations: [
     AppComponent,
+    WorkersComponent,
     WorkerComponent,
     ItemComponent,
-    SidebarComponent,
     FactoryComponent,
     TaskComponent,
     SingleWorkerPlaceComponent,

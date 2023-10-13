@@ -19,22 +19,27 @@ export class WorkersService {
   ) {
     this.workerAux = new Worker();
     this.workerAux.color = "var(--azul-oscuro)";
+    this.workerAux.role = "Chemist";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--azul-claro)";
+    this.workerAux.role = "Developer";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--gris)";
+    this.workerAux.role = "Engineer";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--rojo)";
+    this.workerAux.role = "Assembler";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--verde)";
+    this.workerAux.role = "Fabricator";
     this.workers.push(this.workerAux);
   }
 

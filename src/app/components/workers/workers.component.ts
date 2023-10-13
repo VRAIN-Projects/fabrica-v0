@@ -3,12 +3,11 @@ import { WorkersService } from 'src/app/services/workers.service';
 import { Worker } from '../../models/worker.model';
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  selector: 'app-workers',
+  templateUrl: './workers.component.html',
+  styleUrls: ['./workers.component.css']
 })
-export class SidebarComponent {
-
+export class WorkersComponent {
   workers: Worker[] = [];
 
   constructor(workerService: WorkersService){
