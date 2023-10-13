@@ -20,26 +20,31 @@ export class WorkersService {
     this.workerAux = new Worker();
     this.workerAux.color = "var(--azul-oscuro)";
     this.workerAux.role = "Chemist";
+    this.workerAux.name = "Alice";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--azul-claro)";
     this.workerAux.role = "Developer";
+    this.workerAux.name = "Bella";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--gris)";
     this.workerAux.role = "Engineer";
+    this.workerAux.name = "Debbie";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--rojo)";
     this.workerAux.role = "Assembler";
+    this.workerAux.name = "Frank";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--verde)";
     this.workerAux.role = "Fabricator";
+    this.workerAux.name = "Gaby";
     this.workers.push(this.workerAux);
   }
 
@@ -78,8 +83,8 @@ export class WorkersService {
           console.error("Error, la lista no existe en el servicio");
         }
       }
-      //Remove the worker from workers
-      this.workers.splice(position, 1);
+      //Set the task to the worker
+      this.workers[position].task = task;
     }
   }
 }
