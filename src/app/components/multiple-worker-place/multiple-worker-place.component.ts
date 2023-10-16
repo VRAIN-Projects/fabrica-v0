@@ -28,11 +28,22 @@ export class MultipleWorkerPlaceComponent {
   }
   
   drop(event: CdkDragDrop<string[]>) {
+
+    let changingWorker = null;
+
     if (event.container.id === event.previousContainer.id) {
       // move inside same list
       moveItemInArray(this.workers, event.previousIndex, event.currentIndex);
     } else {
-      this.workerService.changeListFromSingleToMultiple(this.task);
+      changingWorker = this.workerService.getChangingWorker();
+      //if(changingWorker.getChangingWorker() != 0) {
+
+      if(changingWorker.task > 0) {
+        this.workerService.changeListFromMultipleToMultiple(this.task);
+      } else {
+        this.workerService.changeListFromSingleToMultiple(this.task);
+      }
+
       this.workers = this.workerService.getWorkersTask(this.task);
     }
   }

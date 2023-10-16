@@ -61,6 +61,10 @@ export class WorkersService {
     this.workerSelected = worker;
   }
 
+  public getChangingWorker() : Worker {
+    return this.workerSelected;
+  }
+
   public changeListFromSingleToMultiple(task: number) : void {
     //Search the worker in the list
     let position = this.workers.indexOf(this.workerSelected);
@@ -70,6 +74,20 @@ export class WorkersService {
       //We change the task, check first if the Object is not possibly 'undefined'
       if(this.workers !== undefined && this.workers[position] !== undefined){
         this.workers[position].task = task;
+      }
+    }
+  }
+
+  public changeListFromMultipleToMultiple(task: number) : void {
+    //Search the worker in the list
+    let position = this.workers.indexOf(this.workerSelected);
+
+    //If we find the worker
+    if ( position > -1){
+      //We change the task, check first if the Object is not possibly 'undefined'
+      if(this.workers !== undefined && this.workers[position] !== undefined){
+        this.workers[position].task = task;
+        this.workerTaskChanged.emit();
       }
     }
   }
