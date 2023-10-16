@@ -23,20 +23,17 @@ export class SingleWorkerPlaceComponent {
     this.singleWorker.push(this.worker);
   }
   
-  drop(event: CdkDragDrop<string[]>) {
-    if (event.container.id === event.previousContainer.id) {
-      // move inside same list
-      moveItemInArray(this.singleWorker, event.previousIndex, event.currentIndex);
-    } else {
-
-    }
-  }
 
   selectWorker() {
     this.workerService.setChangingWorker(this.worker);
   }
 
-  
-
-
+  drop(event: CdkDragDrop<string[]>) {
+    if (event.container.id === event.previousContainer.id) {
+      // move inside same list
+      moveItemInArray(this.singleWorker, event.previousIndex, event.currentIndex);
+    } else {
+      this.workerService.changeListFromMultipleToSingle();
+    }
+  }
 }

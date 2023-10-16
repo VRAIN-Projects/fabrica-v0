@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50.615498mm"
+   height="92.141479mm"
+   viewBox="0 0 50.615498 92.14148"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="worker-void.svg"
+   inkscape:export-filename="/home/sinnan/Imágenes/boceto-persona.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.7735518"
+     inkscape:cx="-102.77269"
+     inkscape:cy="109.88275"
+     inkscape:window-width="1440"
+     inkscape:window-height="831"
+     inkscape:window-x="0"
+     inkscape:window-y="42"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-bottom="0"
+     fit-margin-left="0"
+     fit-margin-right="0" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-81.152391,-91.036819)">
+    <path
+       id="path31"
+       style="fill:#000000;fill-rule:evenodd;stroke-width:13.09606315;fill-opacity:0.11873013;stroke:#000000;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:13.09606315,39.28818947;stroke-linecap:round;stroke-dashoffset:0"
+       d="M 96.279297 0 A 57.846362 55.995753 0 0 0 38.431641 55.996094 A 57.846362 55.995753 0 0 0 78.808594 109.36133 C 75.351902 110.96621 72.155217 113.08981 69.253906 115.60352 C 68.143125 114.13257 66.703589 112.86837 64.966797 111.9375 C 58.560052 108.50368 50.638898 110.89794 47.205078 117.30469 L 1.5683594 202.45312 C -1.8654608 208.85987 0.52684867 216.78102 6.9335938 220.21484 C 13.340339 223.64866 21.263445 221.25635 24.697266 214.84961 L 53.402344 161.29297 L 53.402344 228.93164 L 53.402344 238.37891 C 53.402344 239.96454 53.503968 241.52575 53.699219 243.05664 L 53.699219 330.43164 C 53.699219 339.92188 61.339842 347.5625 70.830078 347.5625 C 80.320315 347.5625 87.960936 339.92188 87.960938 330.43164 L 87.960938 274.64258 C 88.540451 274.66981 89.122491 274.68555 89.708984 274.68555 L 100.62695 274.68555 C 101.4183 274.68555 102.20201 274.6568 102.98047 274.60742 L 102.98047 331.12109 C 102.98047 340.61133 110.62109 348.25195 120.11133 348.25195 C 129.60156 348.25195 137.24219 340.61133 137.24219 331.12109 L 137.24219 231.42773 C 137.24219 230.31818 137.13321 229.23527 136.93359 228.18555 L 136.93359 226.22656 L 136.93359 160.33594 L 166.66406 214.57422 C 170.15803 220.94836 178.10242 223.2674 184.47656 219.77344 C 190.85071 216.27947 193.16975 208.33508 189.67578 201.96094 L 143.24023 117.24609 C 139.74627 110.87195 131.80188 108.55291 125.42773 112.04688 C 123.71695 112.98459 122.30152 114.2445 121.20898 115.70703 C 118.49727 113.33925 115.50847 111.34486 112.30273 109.76953 A 57.846362 55.995753 0 0 0 154.125 55.996094 A 57.846362 55.995753 0 0 0 96.279297 0 z "
+       transform="matrix(0.26458333,0,0,0.26458333,81.152391,91.036819)" />
+  </g>
+</svg>

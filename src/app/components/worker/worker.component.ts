@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Worker } from '../../models/worker.model';
 
 @Component({
   selector: 'app-worker',
@@ -6,10 +7,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./worker.component.css']
 })
 export class WorkerComponent {
-  @Input() color: string = 'black';
+  @Input() worker: Worker = new Worker();
+  @Input() origin: boolean = false;
 
   constructor() { 
     
-  } 
+  }
+
 
 }
