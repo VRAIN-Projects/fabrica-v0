@@ -28,7 +28,7 @@ export class SingleWorkerPlaceComponent {
     this.workerService.setChangingWorker(this.worker);
   }
 
-  drop(event: CdkDragDrop<string[]>) {
+  drop(event: CdkDragDrop<Worker[]>) {
     if (event.container.id === event.previousContainer.id) {
       // move inside same list
       moveItemInArray(this.singleWorker, event.previousIndex, event.currentIndex);

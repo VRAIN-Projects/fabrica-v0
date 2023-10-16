@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { WorkersService } from 'src/app/services/workers.service';
 import { Worker } from '../../models/worker.model';
@@ -21,6 +21,10 @@ export class MultipleWorkerPlaceComponent {
 
   ngOnInit(){
     this.workers = this.workerService.getWorkersTask(this.task);
+
+    this.workerService.workerTaskChanged.subscribe(() => {
+      this.workers = this.workerService.getWorkersTask(this.task);
+    });
   }
   
   drop(event: CdkDragDrop<string[]>) {
@@ -31,5 +35,11 @@ export class MultipleWorkerPlaceComponent {
       this.workerService.changeListFromSingleToMultiple(this.task);
       this.workers = this.workerService.getWorkersTask(this.task);
     }
+  }
+
+  selectWorker(worker : Worker) {
+    this.workerService.setChangingWorker(worker);
+    //Print the worker
+    console.log(worker);
   }
 }

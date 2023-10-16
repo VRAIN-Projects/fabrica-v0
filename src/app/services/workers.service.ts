@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { Worker } from '../models/worker.model';
 
 
@@ -6,6 +6,8 @@ import { Worker } from '../models/worker.model';
   providedIn: 'root'
 })
 export class WorkersService {
+
+  public workerTaskChanged: EventEmitter<void> = new EventEmitter<void>();
 
   private workerAux: Worker = new Worker();
 
@@ -46,16 +48,9 @@ export class WorkersService {
     this.workers.push(this.workerAux);
   }
 
-  public getWorkersTask (task: number) : Worker[] {
-    //Return only the workers with the given number task
-    let w2 = this.workers.filter(worker => worker.task == task);
-    //Print the list of workers
-    console.log("List of workers:");
-    w2.forEach(worker => {
-      console.log(worker.name + " " + worker.task);
-    });
 
-    return w2;
+  public getWorkersTask (task: number) : Worker[] {
+   return this.workers.filter(worker => worker.task == task);
   }
 
   public getWorkers() : Worker[] {
@@ -74,10 +69,7 @@ export class WorkersService {
     if ( position > -1){
       //We change the task, check first if the Object is not possibly 'undefined'
       if(this.workers !== undefined && this.workers[position] !== undefined){
-        console.log("Changing task of worker " + this.workers[position].name + " to " + task);
         this.workers[position].task = task;
-
-
       }
     }
   }
@@ -86,10 +78,11 @@ export class WorkersService {
     let position = this.workers.indexOf(this.workerSelected);
 
     //If we find the worker
-    if ( position != -1){
+    if ( position > -1){
       // Check if the worker object is not undefined before accessing its properties
       if(this.workers[position] !== undefined){
         this.workers[position].task = 0;
+        this.workerTaskChanged.emit();
       }
     }
   }

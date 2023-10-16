@@ -5,5 +5,5 @@
     class="example-list"
     (cdkDropListDropped)="drop($event)">
     
-    <app-worker [worker]="worker" *ngFor="let worker of workers" cdkDrag></app-worker>
+    <app-worker [worker]="worker" *ngFor="let worker of workers" cdkDrag (cdkDragStarted)="selectWorker(worker)"></app-worker>
 </section>  
