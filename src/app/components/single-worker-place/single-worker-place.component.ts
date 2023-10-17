@@ -35,6 +35,13 @@ export class SingleWorkerPlaceComponent {
     } else {
       this.workerService.changeListFromMultipleToSingle();
     }
+
+    let voidWorker = event.container.element.nativeElement.querySelector('.void-worker');
+
+        //hide all the void workers
+        if (voidWorker) {
+          (voidWorker as HTMLElement).style.display = 'block';
+        }
   }
 
   hideVoidWorker(event: CdkDragEnter){
