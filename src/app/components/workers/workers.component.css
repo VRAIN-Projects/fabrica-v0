@@ -1,4 +1,23 @@
 .workers {
     background-color: aliceblue;
     padding: 30px 10px 0px 10px;
+    /*Fixed bottom*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.horizontal-scroll-workers {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 30px;
+    scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* for iOS */
+
+}
+
+.item {
+    margin: 0px 10px 0px 0px;
 }

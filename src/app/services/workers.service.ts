@@ -46,6 +46,42 @@ export class WorkersService {
     this.workerAux.role = "Fabricator";
     this.workerAux.name = "Gaby";
     this.workers.push(this.workerAux);
+
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "var(--verde)";
+    this.workerAux.role = "Fabricator";
+    this.workerAux.name = "Gaby";
+    this.workers.push(this.workerAux);
+
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "var(--verde)";
+    this.workerAux.role = "Fabricator";
+    this.workerAux.name = "Gaby";
+    this.workers.push(this.workerAux);
+
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "var(--verde)";
+    this.workerAux.role = "Fabricator";
+    this.workerAux.name = "Gaby";
+    this.workers.push(this.workerAux);
+
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "var(--verde)";
+    this.workerAux.role = "Fabricator";
+    this.workerAux.name = "Gaby";
+    this.workers.push(this.workerAux);
+
+
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "var(--verde)";
+    this.workerAux.role = "Fabricator";
+    this.workerAux.name = "Gaby";
+    this.workers.push(this.workerAux);
   }
 
 
