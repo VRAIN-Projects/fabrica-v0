@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { CdkDragDrop, CdkDragEnter, moveItemInArray} from '@angular/cdk/drag-drop';
 import { Worker } from '../../models/worker.model';
 import { WorkersService } from 'src/app/services/workers.service';
 
@@ -36,4 +36,16 @@ export class SingleWorkerPlaceComponent {
       this.workerService.changeListFromMultipleToSingle();
     }
   }
+
+  hideVoidWorker(event: CdkDragEnter){
+    //get the voidworker
+    let voidWorker = event.container.element.nativeElement.querySelector('.void-worker');
+
+    //hide all the void workers
+    if (voidWorker) {
+      (voidWorker as HTMLElement).style.display = 'none';
+    }
+  }
+
+  
 }

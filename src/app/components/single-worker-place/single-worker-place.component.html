@@ -4,7 +4,8 @@
     [cdkDropListData]="singleWorker"
     class="example-list"
     id="single"
-    (cdkDropListDropped)="drop($event)">
+    (cdkDropListDropped)="drop($event)"
+    (cdkDropListEntered)="hideVoidWorker($event)">
 
     <app-worker [origin]="true" [worker]="worker" *ngFor="let worker of singleWorker" cdkDrag (cdkDragStarted)="selectWorker()">
 
