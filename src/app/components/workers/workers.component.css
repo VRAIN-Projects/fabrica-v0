@@ -5,10 +5,6 @@
 .horizontal-scroll-workers {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
-    padding: 30px;
-    scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch; /* for iOS */
 
 }
 

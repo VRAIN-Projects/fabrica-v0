@@ -11,10 +11,16 @@
     z-index: 1;
     background-color: var(--azul-claro);
     height: 200px;
+
+   
+    overflow-x: scroll;
+    padding: 30px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* for iOS */
 }
 
 .main {
-    display: block;
+    display:block;
     overflow-y: scroll;
     height: calc(100vh - 200px);
 }
