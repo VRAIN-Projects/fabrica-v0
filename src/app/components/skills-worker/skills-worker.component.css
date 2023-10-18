@@ -1,0 +1,27 @@
+.circle-skill {
+    padding: 10px;
+    display: inline-block;
+    border-radius: 300px;
+    margin-right: 5px;
+    border: 2px solid #000;
+}
+
+.circle-red {
+    background-color: #ff0000;
+}
+
+.circle-blue {
+    background-color: #0000ff;
+}
+
+.circle-green {
+    background-color: #00ff00;
+}
+
+.circle-yellow {
+    background-color: #ffff00;
+}
+
+.skills {
+    margin: 10px 0px 0px 10px;
+}

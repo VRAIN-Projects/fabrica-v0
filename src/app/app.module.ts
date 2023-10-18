@@ -7,10 +7,12 @@ import { WorkerComponent } from './components/worker/worker.component';
 import { ItemComponent } from './components/item/item.component';
 import { WorkersComponent } from './components/workers/workers.component';
 import { FactoryComponent } from './components/factory/factory.component';
-import { TaskComponent } from './components/task/task.component';
+import { ActionComponent } from './components/action/action.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { SingleWorkerPlaceComponent } from './components/single-worker-place/single-worker-place.component';
 import { MultipleWorkerPlaceComponent } from './components/multiple-worker-place/multiple-worker-place.component';
+import { SkillsActionComponent } from './components/skills-action/skills-action.component';
+import { SkillsWorkerComponent } from './components/skills-worker/skills-worker.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +21,11 @@ import { MultipleWorkerPlaceComponent } from './components/multiple-worker-place
     WorkerComponent,
     ItemComponent,
     FactoryComponent,
-    TaskComponent,
     SingleWorkerPlaceComponent,
-    MultipleWorkerPlaceComponent
+    MultipleWorkerPlaceComponent,
+    SkillsActionComponent,
+    SkillsWorkerComponent,
+    ActionComponent
   ],
   imports: [
     BrowserModule,

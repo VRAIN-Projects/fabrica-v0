@@ -1,4 +1,4 @@
-<section class="icon" *ngIf="origin == false || origin == true && worker.task == 0">
+<section class="icon" *ngIf="origin == false || origin == true && worker.action == 0">
     <svg
     width="50.615498mm"
     height="92.141479mm"
@@ -32,7 +32,7 @@
  
 </section>
 
-<section class="icon void-worker" *ngIf="worker.task > 0 && origin == true">
+<section class="icon void-worker" *ngIf="worker.action > 0 && origin == true">
    <svg
       width="50.615498mm"
       height="92.141479mm"

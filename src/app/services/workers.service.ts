@@ -86,7 +86,7 @@ export class WorkersService {
 
 
   public getWorkersTask (task: number) : Worker[] {
-   return this.workers.filter(worker => worker.task == task);
+   return this.workers.filter(worker => worker.action == task);
   }
 
   public getWorkers() : Worker[] {
@@ -109,7 +109,7 @@ export class WorkersService {
     if ( position > -1){
       //We change the task, check first if the Object is not possibly 'undefined'
       if(this.workers !== undefined && this.workers[position] !== undefined){
-        this.workers[position].task = task;
+        this.workers[position].action = task;
       }
     }
   }
@@ -122,7 +122,7 @@ export class WorkersService {
     if ( position > -1){
       //We change the task, check first if the Object is not possibly 'undefined'
       if(this.workers !== undefined && this.workers[position] !== undefined){
-        this.workers[position].task = task;
+        this.workers[position].action = task;
         this.workerTaskChanged.emit();
       }
     }
@@ -135,7 +135,7 @@ export class WorkersService {
     if ( position > -1){
       // Check if the worker object is not undefined before accessing its properties
       if(this.workers[position] !== undefined){
-        this.workers[position].task = 0;
+        this.workers[position].action = 0;
         this.workerTaskChanged.emit();
       }
     }

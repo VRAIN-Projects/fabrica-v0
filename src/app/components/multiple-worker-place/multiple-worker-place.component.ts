@@ -11,7 +11,7 @@ import { Worker } from '../../models/worker.model';
 export class MultipleWorkerPlaceComponent {
   
 
-  @Input() task: number = 0;
+  @Input() action: number = 0;
 
   workers : Worker[] = []; 
 
@@ -20,10 +20,10 @@ export class MultipleWorkerPlaceComponent {
   }
 
   ngOnInit(){
-    this.workers = this.workerService.getWorkersTask(this.task);
+    this.workers = this.workerService.getWorkersTask(this.action);
 
     this.workerService.workerTaskChanged.subscribe(() => {
-      this.workers = this.workerService.getWorkersTask(this.task);
+      this.workers = this.workerService.getWorkersTask(this.action);
     });
   }
   
@@ -38,13 +38,13 @@ export class MultipleWorkerPlaceComponent {
       changingWorker = this.workerService.getChangingWorker();
       //if(changingWorker.getChangingWorker() != 0) {
 
-      if(changingWorker.task > 0) {
-        this.workerService.changeListFromMultipleToMultiple(this.task);
+      if(changingWorker.action > 0) {
+        this.workerService.changeListFromMultipleToMultiple(this.action);
       } else {
-        this.workerService.changeListFromSingleToMultiple(this.task);
+        this.workerService.changeListFromSingleToMultiple(this.action);
       }
 
-      this.workers = this.workerService.getWorkersTask(this.task);
+      this.workers = this.workerService.getWorkersTask(this.action);
     }
   }
 
