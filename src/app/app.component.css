@@ -1,7 +1,7 @@
 .factory {
     display: block;
     overflow-y: scroll;
-    height: calc(100vh - 220px); /* adjust the height as needed */
+    height: calc(100vh - 60vh); /* adjust the height as needed */
 }
 
 .workers {
@@ -12,5 +12,5 @@
     width: 100%;
     z-index: 1;
     background-color: var(--azul-claro);
-
+    height: 25vh;
 }

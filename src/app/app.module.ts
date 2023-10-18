@@ -13,6 +13,8 @@ import { SingleWorkerPlaceComponent } from './components/single-worker-place/sin
 import { MultipleWorkerPlaceComponent } from './components/multiple-worker-place/multiple-worker-place.component';
 import { SkillsActionComponent } from './components/skills-action/skills-action.component';
 import { SkillsWorkerComponent } from './components/skills-worker/skills-worker.component';
+import { StatisticsComponent } from './components/statistics/statistics.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { SkillsWorkerComponent } from './components/skills-worker/skills-worker.
     MultipleWorkerPlaceComponent,
     SkillsActionComponent,
     SkillsWorkerComponent,
-    ActionComponent
+    ActionComponent,
+    NavbarComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,

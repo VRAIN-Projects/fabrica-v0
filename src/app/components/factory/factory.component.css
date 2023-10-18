@@ -8,4 +8,11 @@
     border: 1px solid black;
     border-radius: 5px;
     background-color: #fff;
+    width: 300px;
+    display: block;
+    position: absolute;
+}
+
+.board {
+    position: relative;
 }
