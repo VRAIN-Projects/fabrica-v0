@@ -1,0 +1,16 @@
+.factory {
+    display: block;
+    overflow-y: scroll;
+    height: calc(100vh - 220px); /* adjust the height as needed */
+}
+
+.workers {
+/*Fixed to bottom*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--azul-claro);
+
+}

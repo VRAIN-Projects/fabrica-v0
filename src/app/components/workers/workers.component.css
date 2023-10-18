@@ -1,10 +1,4 @@
 .workers {
-    background-color: aliceblue;
-    padding: 30px 10px 0px 10px;
-    /*Fixed bottom*/
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
 }
 
