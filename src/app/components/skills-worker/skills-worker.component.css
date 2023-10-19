@@ -1,6 +1,8 @@
 .circle-skill {
     padding: 10px;
     display: inline-block;
+    position: relative;
+    width: 10px;
     border-radius: 300px;
     margin-right: 5px;
     border: 2px solid #000;
@@ -25,3 +27,24 @@
 .skills {
     margin: 10px 0px 0px 10px;
 }
+  
+.circle-skill .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    /*Under the circle */
+    left: -50px;
+    bottom: 25px;
+  }
+  
+  .circle-skill:hover .tooltiptext {
+    visibility: visible;
+  }
