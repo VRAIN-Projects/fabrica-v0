@@ -43,13 +43,34 @@ export class FactoryComponent {
       this.context.stroke();
       this.context.closePath();
 
+
+
       this.context.beginPath();
-      this.context.moveTo(775, 170);
-      this.context.lineTo(775, 320);
+      this.context.moveTo(775, 150);
+      this.context.lineTo(775, 450);
       //stroke width
       this.context.lineWidth = 10;
       this.context.stroke();
       this.context.closePath();
+
+      this.context.beginPath();
+      this.context.moveTo(300, 400);
+      this.context.lineTo(300, 700);
+      //stroke width
+      this.context.lineWidth = 10;
+      this.context.stroke();
+      this.context.closePath();
+
+
+      this.context.beginPath();
+      this.context.moveTo(775, 470);
+      this.context.lineTo(775, 620);
+      //stroke width
+      this.context.lineWidth = 10;
+      this.context.stroke();
+      this.context.closePath();
+
+      
       
     } else {
       console.log("Error: No se pudo obtener el contexto");
