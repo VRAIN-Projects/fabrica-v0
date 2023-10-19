@@ -17,7 +17,7 @@ export class FactoryComponent {
       this.context = this.canvas?.nativeElement.getContext('2d')!;
 
       //set size canvas to max screen, it is srcollable so its more wide than the screen
-      this.canvas.nativeElement.width = window.innerWidth;
+      this.canvas.nativeElement.width = window.innerWidth + 300;
       this.canvas.nativeElement.height = window.innerHeight;
     } else {
       console.log("Error: No se pudo obtener el canvas");
@@ -28,8 +28,24 @@ export class FactoryComponent {
       
       //Draw an arrow
       this.context.beginPath();
-      this.context.moveTo(150, 175);
-      this.context.lineTo(100, 100);
+      this.context.moveTo(250, 170);
+      this.context.lineTo(400, 320);
+      //stroke width
+      this.context.lineWidth = 10;
+      this.context.stroke();
+      this.context.closePath();
+
+      this.context.beginPath();
+      this.context.moveTo(600, 170);
+      this.context.lineTo(400, 320);
+      //stroke width
+      this.context.lineWidth = 10;
+      this.context.stroke();
+      this.context.closePath();
+
+      this.context.beginPath();
+      this.context.moveTo(1000, 170);
+      this.context.lineTo(1000, 320);
       //stroke width
       this.context.lineWidth = 10;
       this.context.stroke();
