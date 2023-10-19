@@ -6,9 +6,6 @@
     width: 100%;
     z-index: 1;
     background-color: var(--azul-claro);
-    height: 200px;
-
-   
     overflow-x: scroll;
     padding: 30px;
     scroll-behavior: smooth;
@@ -19,5 +16,5 @@
     display:block;
     overflow-y: scroll;
     max-width: max-content;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 300px);
 }
