@@ -16,6 +16,9 @@ export class FactoryComponent {
     
       this.context = this.canvas?.nativeElement.getContext('2d')!;
 
+      //set size canvas to max screen, it is srcollable so its more wide than the screen
+      this.canvas.nativeElement.width = window.innerWidth;
+      this.canvas.nativeElement.height = window.innerHeight;
     } else {
       console.log("Error: No se pudo obtener el canvas");
     }

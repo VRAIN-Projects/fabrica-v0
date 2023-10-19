@@ -19,11 +19,8 @@
 }
 
 .canvas {
-    position:absolute;
+    position:relative;
     z-index: 1;
-    width: max-content;
-    height: max-content;
-
-    background-color: aqua;
+    background-color: rgb(0, 0, 255, 0.5);
 }
 
