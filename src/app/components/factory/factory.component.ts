@@ -28,24 +28,24 @@ export class FactoryComponent {
       
       //Draw an arrow
       this.context.beginPath();
-      this.context.moveTo(250, 170);
-      this.context.lineTo(400, 320);
+      this.context.moveTo(150, 170);
+      this.context.lineTo(300, 320);
       //stroke width
       this.context.lineWidth = 10;
       this.context.stroke();
       this.context.closePath();
 
       this.context.beginPath();
-      this.context.moveTo(600, 170);
-      this.context.lineTo(400, 320);
+      this.context.moveTo(500, 170);
+      this.context.lineTo(300, 320);
       //stroke width
       this.context.lineWidth = 10;
       this.context.stroke();
       this.context.closePath();
 
       this.context.beginPath();
-      this.context.moveTo(1000, 170);
-      this.context.lineTo(1000, 320);
+      this.context.moveTo(775, 170);
+      this.context.lineTo(775, 320);
       //stroke width
       this.context.lineWidth = 10;
       this.context.stroke();
@@ -54,8 +54,6 @@ export class FactoryComponent {
     } else {
       console.log("Error: No se pudo obtener el contexto");
     }
-
-    
   }
 
   }
