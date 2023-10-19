@@ -21,6 +21,6 @@
 .canvas {
     position:relative;
     z-index: -1;
-    background-color: rgb(0, 0, 255, 0.5);
+    /*background-color: rgb(0, 0, 255, 0.5);*/
 }
 
