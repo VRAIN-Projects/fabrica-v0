@@ -15,4 +15,15 @@
 
 .board {
     position: relative;
+    background-color: red !important;
 }
+
+.canvas {
+    position:absolute;
+    z-index: 1;
+    width: max-content;
+    height: max-content;
+
+    background-color: aqua;
+}
+
