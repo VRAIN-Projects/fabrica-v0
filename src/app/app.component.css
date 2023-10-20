@@ -7,7 +7,6 @@
     z-index: 1;
     background-color: var(--azul-claro);
     overflow-x: scroll;
-    padding: 30px;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; /* for iOS */
 }
@@ -16,10 +15,8 @@
     display:block;
     overflow-y: scroll;
     max-width: max-content;
-    height: calc(100vh - 300px);
+    height: calc(100vh - 200px);
 }
 
-@viewport {  
-    orientation: portrait !important;  
-  }
+
 

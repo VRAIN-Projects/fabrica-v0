@@ -28,7 +28,7 @@ export class FactoryComponent {
       
       //Draw an arrow
       this.context.beginPath();
-      this.context.moveTo(150, 170);
+      this.context.moveTo(150, 120);
       this.context.lineTo(300, 320);
       //stroke width
       this.context.lineWidth = 10;
@@ -36,7 +36,7 @@ export class FactoryComponent {
       this.context.closePath();
 
       this.context.beginPath();
-      this.context.moveTo(500, 170);
+      this.context.moveTo(470, 120);
       this.context.lineTo(300, 320);
       //stroke width
       this.context.lineWidth = 10;
@@ -46,16 +46,16 @@ export class FactoryComponent {
 
 
       this.context.beginPath();
-      this.context.moveTo(775, 150);
-      this.context.lineTo(775, 450);
+      this.context.moveTo(775, 100);
+      this.context.lineTo(775, 250);
       //stroke width
       this.context.lineWidth = 10;
       this.context.stroke();
       this.context.closePath();
 
       this.context.beginPath();
-      this.context.moveTo(300, 400);
-      this.context.lineTo(300, 700);
+      this.context.moveTo(300, 300);
+      this.context.lineTo(300, 500);
       //stroke width
       this.context.lineWidth = 10;
       this.context.stroke();
@@ -63,8 +63,8 @@ export class FactoryComponent {
 
 
       this.context.beginPath();
-      this.context.moveTo(775, 470);
-      this.context.lineTo(775, 620);
+      this.context.moveTo(775, 300);
+      this.context.lineTo(775, 500);
       //stroke width
       this.context.lineWidth = 10;
       this.context.stroke();
