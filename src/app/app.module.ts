@@ -11,10 +11,9 @@ import { ActionComponent } from './components/action/action.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { SingleWorkerPlaceComponent } from './components/single-worker-place/single-worker-place.component';
 import { MultipleWorkerPlaceComponent } from './components/multiple-worker-place/multiple-worker-place.component';
-import { SkillsActionComponent } from './components/skills-action/skills-action.component';
-import { SkillsWorkerComponent } from './components/skills-worker/skills-worker.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +24,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     FactoryComponent,
     SingleWorkerPlaceComponent,
     MultipleWorkerPlaceComponent,
-    SkillsActionComponent,
-    SkillsWorkerComponent,
+    SkillsComponent,
     ActionComponent,
     NavbarComponent,
     StatisticsComponent

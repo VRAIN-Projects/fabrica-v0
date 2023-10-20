@@ -1,4 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Action } from 'src/app/models/action.model';
+import { WorkersService } from 'src/app/services/workers.service';
 
 @Component({
   selector: 'app-factory',
@@ -10,6 +12,14 @@ export class FactoryComponent {
   canvas: ElementRef<HTMLCanvasElement> | undefined = undefined;
 
   context: CanvasRenderingContext2D | undefined = undefined;
+
+  actions: Action[] = [];
+
+  constructor(private workerService: WorkersService) { }
+
+  ngOnInit(): void {
+    this.actions = this.workerService.getActions();
+  }
 
   ngAfterViewInit(): void {
     if(this.canvas != undefined){

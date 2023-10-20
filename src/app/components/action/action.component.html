@@ -1,12 +1,12 @@
 <section class="action">
     <article class="row">
         <div class="col-12">
-            <h5>Action: {{action}}</h5>
+            <h5>Action: {{action.id}}</h5>
         </div>
         <div class="col-12">
-            <app-multiple-worker-place [action] = "action"></app-multiple-worker-place>
+            <app-multiple-worker-place [numberAction] = "action.id"></app-multiple-worker-place>
         </div>
-        <app-skills-action></app-skills-action>
+        <app-skills [skills]="action.skills"></app-skills>
     </article>
 </section>
 
