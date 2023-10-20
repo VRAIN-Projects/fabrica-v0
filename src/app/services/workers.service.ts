@@ -1,6 +1,6 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { Worker } from '../models/worker.model';
-
+import { Skill } from '../models/skill.model';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +8,14 @@ import { Worker } from '../models/worker.model';
 export class WorkersService {
 
   public workerTaskChanged: EventEmitter<void> = new EventEmitter<void>();
+
+  private allSkills: Skill[] = [
+    new Skill("Chemist", "red"),
+    new Skill("Developer", "blue"),
+    new Skill("Engineer", "green"),
+    new Skill("Assembler", "yellow"),
+    new Skill("Fabricator", "gray")
+  ];
 
   private workerAux: Worker = new Worker();
 
@@ -19,69 +27,34 @@ export class WorkersService {
   ) {
     this.workerAux = new Worker();
     this.workerAux.color = "var(--azul-oscuro)";
-    this.workerAux.role = "Chemist";
     this.workerAux.name = "Alice";
+    this.workerAux.skills = [this.allSkills[0], this.allSkills[1]];
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--azul-claro)";
-    this.workerAux.role = "Developer";
+    this.workerAux.skills = [this.allSkills[0], this.allSkills[3]];
     this.workerAux.name = "Bella";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--gris)";
-    this.workerAux.role = "Engineer";
+    this.workerAux.skills = [this.allSkills[1], this.allSkills[2], this.allSkills[3]];
     this.workerAux.name = "Debbie";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--rojo)";
-    this.workerAux.role = "Assembler";
+    this.workerAux.skills = [this.allSkills[2], this.allSkills[3], this.allSkills[4]];
     this.workerAux.name = "Frank";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--verde)";
-    this.workerAux.role = "Fabricator";
+    this.workerAux.skills = [this.allSkills[0], this.allSkills[4]];
     this.workerAux.name = "Gaby";
     this.workers.push(this.workerAux);
 
-
-    this.workerAux = new Worker();
-    this.workerAux.color = "var(--verde)";
-    this.workerAux.role = "Fabricator";
-    this.workerAux.name = "Gaby";
-    this.workers.push(this.workerAux);
-
-
-    this.workerAux = new Worker();
-    this.workerAux.color = "var(--verde)";
-    this.workerAux.role = "Fabricator";
-    this.workerAux.name = "Gaby";
-    this.workers.push(this.workerAux);
-
-
-    this.workerAux = new Worker();
-    this.workerAux.color = "var(--verde)";
-    this.workerAux.role = "Fabricator";
-    this.workerAux.name = "Gaby";
-    this.workers.push(this.workerAux);
-
-
-    this.workerAux = new Worker();
-    this.workerAux.color = "var(--verde)";
-    this.workerAux.role = "Fabricator";
-    this.workerAux.name = "Gaby";
-    this.workers.push(this.workerAux);
-
-
-
-    this.workerAux = new Worker();
-    this.workerAux.color = "var(--verde)";
-    this.workerAux.role = "Fabricator";
-    this.workerAux.name = "Gaby";
-    this.workers.push(this.workerAux);
   }
 
 

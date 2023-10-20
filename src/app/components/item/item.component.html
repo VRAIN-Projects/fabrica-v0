@@ -1,8 +1,8 @@
     <section class="item">
         <article class="row">
-            <div class="col-12">{{worker.role}}</div>
             <app-single-worker-place [worker] = "worker" class="col-lg-4 col-xs-12"></app-single-worker-place>
-            <div class="col-lg-8 col-xs-12">{{worker.name}}</div>
-            <app-skills-worker [worker] = "worker" class="col-12"></app-skills-worker>
+            <h4 class="col-lg-8 col-xs-12">{{worker.name}}</h4>
+            <div class="skill-title col-2">Skills</div>
+            <app-skills-worker [worker] = "worker" class="col-10"></app-skills-worker>
         </article>
     </section>
