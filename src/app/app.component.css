@@ -18,3 +18,8 @@
     max-width: max-content;
     height: calc(100vh - 300px);
 }
+
+@viewport {  
+    orientation: portrait !important;  
+  }
+
