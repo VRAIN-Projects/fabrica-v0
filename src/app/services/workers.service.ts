@@ -1,6 +1,7 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { Worker } from '../models/worker.model';
 import { Skill } from '../models/skill.model';
+import { Action } from '../models/action.model';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,7 @@ export class WorkersService {
     new Skill("Developer", "blue"),
     new Skill("Engineer", "green"),
     new Skill("Assembler", "yellow"),
-    new Skill("Fabricator", "gray")
+    new Skill("Fabricator", "brown")
   ];
 
   private workerAux: Worker = new Worker();
@@ -23,6 +24,8 @@ export class WorkersService {
 
   private workers: Worker[] = [];
 
+  private actions: Action[] = [];
+  
   constructor(
   ) {
     this.workerAux = new Worker();
@@ -55,8 +58,24 @@ export class WorkersService {
     this.workerAux.name = "Gaby";
     this.workers.push(this.workerAux);
 
-  }
+    this.workerAux = new Worker();
+    this.workerAux.color = "var(--verde)";
+    this.workerAux.skills = [this.allSkills[0], this.allSkills[4]];
+    this.workerAux.name = "Gaby";
+    this.workers.push(this.workerAux);
 
+    this.workerAux = new Worker();
+    this.workerAux.color = "brown";
+    this.workerAux.skills = [this.allSkills[1], this.allSkills[3]];
+    this.workerAux.name = "John";
+    this.workers.push(this.workerAux);
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "green";
+    this.workerAux.skills = [this.allSkills[2], this.allSkills[4]];
+    this.workerAux.name = "George";
+    this.workers.push(this.workerAux);
+  }
 
   public getWorkersTask (task: number) : Worker[] {
    return this.workers.filter(worker => worker.action == task);

@@ -5,4 +5,5 @@ export class Worker {
     public name: string = "...";
     public action: number = 0;
     public skills: Skill[] = [];
+
 }
