@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CdkDragDrop, CdkDragEnter, moveItemInArray} from '@angular/cdk/drag-drop';
-import { Worker } from '../../models/worker.model';
+import { Worker } from '../../../models/worker.model';
 import { WorkersService } from 'src/app/services/workers.service';
 
 

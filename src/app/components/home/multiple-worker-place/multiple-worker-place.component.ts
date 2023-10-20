@@ -1,7 +1,7 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { WorkersService } from 'src/app/services/workers.service';
-import { Worker } from '../../models/worker.model';
+import { Worker } from '../../../models/worker.model';
 
 @Component({
   selector: 'app-multiple-worker-place',

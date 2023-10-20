@@ -3,17 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WorkerComponent } from './components/worker/worker.component';
-import { ItemComponent } from './components/item/item.component';
-import { WorkersComponent } from './components/workers/workers.component';
-import { FactoryComponent } from './components/factory/factory.component';
-import { ActionComponent } from './components/action/action.component';
+import { WorkerComponent } from './components/home/worker/worker.component';
+import { ItemComponent } from './components/home/item/item.component';
+import { WorkersComponent } from './components/home/workers/workers.component';
+import { FactoryComponent } from './components/home/factory/factory.component';
+import { ActionComponent } from './components/home/action/action.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { SingleWorkerPlaceComponent } from './components/single-worker-place/single-worker-place.component';
-import { MultipleWorkerPlaceComponent } from './components/multiple-worker-place/multiple-worker-place.component';
+import { SingleWorkerPlaceComponent } from './components/home/single-worker-place/single-worker-place.component';
+import { MultipleWorkerPlaceComponent } from './components/home/multiple-worker-place/multiple-worker-place.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { SkillsComponent } from './components/skills/skills.component';
+import { NavbarComponent } from './components/home/navbar/navbar.component';
+import { SkillsComponent } from './components/home/skills/skills.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     SkillsComponent,
     ActionComponent,
     NavbarComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
