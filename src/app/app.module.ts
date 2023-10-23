@@ -15,6 +15,7 @@ import { StatisticsComponent } from './components/statistics/statistics.componen
 import { NavbarComponent } from './components/home/navbar/navbar.component';
 import { SkillsComponent } from './components/home/skills/skills.component';
 import { HomeComponent } from './components/home/home.component';
+import { ConnectorComponent } from './components/home/connector/connector.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HomeComponent } from './components/home/home.component';
     ActionComponent,
     NavbarComponent,
     StatisticsComponent,
-    HomeComponent
+    HomeComponent,
+    ConnectorComponent
   ],
   imports: [
     BrowserModule,
