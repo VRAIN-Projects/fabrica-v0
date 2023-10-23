@@ -1,5 +1,8 @@
 .factory {
     margin: 10px 30px 0px 50px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 
 .action {
@@ -11,15 +14,3 @@
     display: block;
     position: absolute;
 }
-
-.board {
-    position: relative;
-    background-color: red !important;
-}
-
-.canvas {
-    position:relative;
-    z-index: -1;
-    /*background-color: rgb(0, 0, 255, 0.5);*/
-}
-
