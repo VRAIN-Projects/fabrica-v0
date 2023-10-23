@@ -16,6 +16,7 @@ import { NavbarComponent } from './components/home/navbar/navbar.component';
 import { SkillsComponent } from './components/home/skills/skills.component';
 import { HomeComponent } from './components/home/home.component';
 import { ConnectorComponent } from './components/home/connector/connector.component';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 @NgModule({
   declarations: [
@@ -31,12 +32,15 @@ import { ConnectorComponent } from './components/home/connector/connector.compon
     NavbarComponent,
     StatisticsComponent,
     HomeComponent,
-    ConnectorComponent
+    ConnectorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DragDropModule
+    DragDropModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts')
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
