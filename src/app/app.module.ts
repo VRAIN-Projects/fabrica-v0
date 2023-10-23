@@ -11,7 +11,7 @@ import { ActionComponent } from './components/home/action/action.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { SingleWorkerPlaceComponent } from './components/home/single-worker-place/single-worker-place.component';
 import { MultipleWorkerPlaceComponent } from './components/home/multiple-worker-place/multiple-worker-place.component';
-import { StatisticsComponent } from './components/statistics/statistics.component';
+import { StatisticsComponent } from './components/home/statistics/statistics.component';
 import { NavbarComponent } from './components/home/navbar/navbar.component';
 import { SkillsComponent } from './components/home/skills/skills.component';
 import { HomeComponent } from './components/home/home.component';
