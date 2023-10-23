@@ -30,12 +30,12 @@ export class WorkersService {
     new Action(3, [this.allSkills[0], this.allSkills[4]], 10, 610),
     new Action(4, [this.allSkills[0], this.allSkills[1], this.allSkills[2]], 10, 910),
     new Action(5, [this.allSkills[0], this.allSkills[1], this.allSkills[2]], 10, 1210),
-    new Action(6, [this.allSkills[1]], 150, 140),
-    new Action(7, [this.allSkills[2]], 150, 760),
-    new Action(8, [this.allSkills[2]], 150, 1210),
-    new Action(9, [this.allSkills[3]], 290, 10),
-    new Action(10, [this.allSkills[4]], 290, 310),
-    new Action(11, [this.allSkills[4]], 290, 860),
+    new Action(6, [this.allSkills[1]], 160, 140),
+    new Action(7, [this.allSkills[2]], 160, 760),
+    new Action(8, [this.allSkills[2]], 160, 1210),
+    new Action(9, [this.allSkills[3]], 310, 10),
+    new Action(10, [this.allSkills[4]], 310, 310),
+    new Action(11, [this.allSkills[4]], 310, 860),
 
   ];
   
