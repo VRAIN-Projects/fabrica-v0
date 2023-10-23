@@ -29,10 +29,10 @@ export class WorkersService {
     new Action(2, [this.allSkills[1], this.allSkills[3]], 10, 300),
     new Action(3, [this.allSkills[0], this.allSkills[4]], 10, 610),
     new Action(4, [this.allSkills[0], this.allSkills[1], this.allSkills[2]], 10, 900),
-    new Action(5, [this.allSkills[1]], 230, 150),
-    new Action(6, [this.allSkills[2]], 230, 610),
-    new Action(7, [this.allSkills[3]], 450, 150),
-    new Action(8, [this.allSkills[4]], 450, 610),
+    new Action(5, [this.allSkills[1]], 150, 150),
+    new Action(6, [this.allSkills[2]], 150, 610),
+    new Action(7, [this.allSkills[3]], 290, 150),
+    new Action(8, [this.allSkills[4]], 290, 610),
 
   ];
   

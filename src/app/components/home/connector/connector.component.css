@@ -1,3 +1,6 @@
 .connector {
-    position: absolute;
+
+    padding: 1000px;
+    background-color: blue;
+    z-index: 100;
 }

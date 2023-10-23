@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./connector.component.css']
 })
 export class ConnectorComponent {
-  @Input() orientation: string = "Straight";
+  @Input() orientation: string = "Straigth";
   @Input() top: number = 0;
   @Input() left: number = 0;
 }
