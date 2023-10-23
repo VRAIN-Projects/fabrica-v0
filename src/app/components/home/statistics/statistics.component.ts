@@ -21,6 +21,9 @@ export class StatisticsComponent implements OnInit{
         inverse: true,
         animationDuration: 300,
         animationDurationUpdate: 300,
+        axisLabel: {
+          rotate: 90
+        },
         max: 2 // only the largest 3 bars will be displayed
       },
       series: [
