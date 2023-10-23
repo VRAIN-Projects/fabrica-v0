@@ -1,9 +1,15 @@
 <section class="factory">
       <app-action *ngFor="let action of actions" [action]="action" class="action" [style.top.px]="action.top" [style.left.px]="action.left"></app-action>
-      <app-connector [orientation]="'UpperLeft'" [left]="140" [top]="122" style="background-color: red; z-index: 50;"></app-connector>
-      <app-connector [orientation]="'UpperRight'" [left]="230" [top]="122" style="background-color: red; z-index: 50;"></app-connector>
-      <app-connector [orientation]="'Straigth'" [left]="220" [top]="262" style="background-color: red; z-index: 50;"></app-connector>
-      <app-connector [orientation]="'Straigth'" [left]="700" [top]="122" style="background-color: red; z-index: 50;"></app-connector>
-      <app-connector [orientation]="'Straigth'" [left]="700" [top]="262" style="background-color: red; z-index: 50;"></app-connector>
+      <app-connector [orientation]="'UpperLeft'" [left]="140" [top]="122" ></app-connector>
+      <app-connector [orientation]="'UpperRight'" [left]="230" [top]="122" ></app-connector>
+      <app-connector [orientation]="'UpperLeft'" [left]="740" [top]="122" ></app-connector>
+      <app-connector [orientation]="'UpperRight'" [left]="830" [top]="122" ></app-connector>
+      <app-connector [orientation]="'LowerLeft'" [left]="150" [top]="262" ></app-connector>
+      <app-connector [orientation]="'LowerRight'" [left]="240" [top]="262" ></app-connector>
+      <app-connector [orientation]="'LowerRight'" [left]="840" [top]="262" ></app-connector>
+      <app-connector [orientation]="'Straigth'" [left]="1300" [top]="122" ></app-connector>
+      <app-connector [orientation]="'LargeLowerLeft'" [left]="930" [top]="262" ></app-connector>
+
+
 
 </section>
