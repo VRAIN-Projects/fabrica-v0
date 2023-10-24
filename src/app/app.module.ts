@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HumanComponent } from './components/home/human/human.component';
+import { WorkerComponent } from './components/home/worker/worker.component';
 import { HumansComponent } from './components/home/humans/humans.component';
 import { FactoryComponent } from './components/home/factory/factory.component';
 import { ActionComponent } from './components/home/action/action.component';
@@ -24,7 +24,7 @@ import { RobotComponent } from './components/home/robot/robot.component';
   declarations: [
     AppComponent,
     HumansComponent,
-    HumanComponent,
+    WorkerComponent,
     FactoryComponent,
     SingleWorkerPlaceComponent,
     MultipleWorkerPlaceComponent,

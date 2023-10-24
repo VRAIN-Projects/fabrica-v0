@@ -3,12 +3,13 @@ import { Worker } from '../../../models/worker.model';
 
 @Component({
   selector: 'app-worker',
-  templateUrl: './human.component.html',
-  styleUrls: ['./human.component.css']
+  templateUrl: './worker.component.html',
+  styleUrls: ['./worker.component.css']
 })
-export class HumanComponent {
+export class WorkerComponent {
   @Input() worker: Worker = new Worker();
   @Input() origin: boolean = false;
+  @Input() isHuman: boolean = true;
 
   constructor() { 
     

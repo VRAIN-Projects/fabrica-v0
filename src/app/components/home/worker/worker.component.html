@@ -1,4 +1,4 @@
-<section class="icon" *ngIf="origin == false || origin == true && worker.action == 0">
+<section class="icon" *ngIf="worker.isHuman == true && (origin == false || origin == true && worker.action == 0)">
     <svg
     width="50.615498mm"
     height="92.141479mm"
@@ -32,7 +32,7 @@
  
 </section>
 
-<section class="icon void-worker" *ngIf="worker.action > 0 && origin == true">
+<section class="icon void-worker" *ngIf="worker.isHuman == true && (worker.action > 0 && origin == true)">
    <svg
       width="50.615498mm"
       height="92.141479mm"
@@ -62,5 +62,73 @@
           transform="matrix(0.26458333,0,0,0.26458333,81.152391,91.036819)" />
      </g>
    </svg>
+</section>
+
+<section class="icon" *ngIf="worker.isHuman == false && (origin == false || origin == true && worker.action == 0)">
+   <svg
+   width="50.615498mm"
+   height="92.141479mm"
+   viewBox="0 0 50.615498 92.14148"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="maquina.svg"
+   inkscape:export-filename="/home/sinnan/Imágenes/boceto-persona.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-81.152391,-91.036819)">
+    <path
+       id="rect2091"
+       [style.fill]="worker.color"
+       style="fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 148.45508 26.072266 L 122.76953 38.386719 L 122.70703 40.1875 L 105.3125 76.992188 L 105.86328 77.251953 L 32.378906 174.83984 A 21.94275 25.806753 0 0 0 21.519531 197.09375 A 21.94275 25.806753 0 0 0 43.460938 222.90039 A 21.94275 25.806753 0 0 0 46.605469 222.63477 L 45.162109 225.86914 L 95.599609 276.8457 L 17.884766 276.8457 L 17.884766 326.49219 L 176.83789 326.49219 L 176.83789 276.8457 L 155.13867 276.8457 L 71.898438 192.71484 L 146.10352 94.169922 L 175.28516 71.949219 L 179.55273 44.171875 L 171.78125 43.648438 L 168.10156 67.601562 L 145.69141 84.666016 L 114.47656 75.880859 L 130.41016 42.167969 L 130.37695 42.152344 L 148.18945 33.613281 L 148.45508 26.072266 z "
+       transform="matrix(0.26458333,0,0,0.26458333,81.152391,91.036819)" />
+  </g>
+</svg>
    
+</section>
+
+
+
+<section class="icon void-worker" *ngIf="worker.isHuman == false && (worker.action > 0 && origin == true)">
+
+   <svg
+   width="50.615498mm"
+   height="92.141479mm"
+   viewBox="0 0 50.615498 92.14148"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="maquina-void.svg"
+   inkscape:export-filename="/home/sinnan/Imágenes/boceto-persona.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-81.152391,-91.036819)">
+    <path
+       id="rect2091"
+       style="fill:#000000;fill-opacity:0.14333382;stroke:#000000;stroke-width:5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:3.77952761,11.33858282;stroke-dashoffset:0"
+       d="M 148.45508 26.072266 L 122.76953 38.386719 L 122.70703 40.1875 L 105.3125 76.992188 L 105.86328 77.251953 L 32.378906 174.83984 A 21.94275 25.806753 0 0 0 21.519531 197.09375 A 21.94275 25.806753 0 0 0 43.460938 222.90039 A 21.94275 25.806753 0 0 0 46.605469 222.63477 L 45.162109 225.86914 L 95.599609 276.8457 L 17.884766 276.8457 L 17.884766 326.49219 L 176.83789 326.49219 L 176.83789 276.8457 L 155.13867 276.8457 L 71.898438 192.71484 L 146.10352 94.169922 L 175.28516 71.949219 L 179.55273 44.171875 L 171.78125 43.648438 L 168.10156 67.601562 L 145.69141 84.666016 L 114.47656 75.880859 L 130.41016 42.167969 L 130.37695 42.152344 L 148.18945 33.613281 L 148.45508 26.072266 z "
+       transform="matrix(0.26458333,0,0,0.26458333,81.152391,91.036819)" />
+  </g>
+</svg>
 </section>

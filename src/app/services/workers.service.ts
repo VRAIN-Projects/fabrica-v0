@@ -44,24 +44,28 @@ export class WorkersService {
     this.workerAux = new Worker();
     this.workerAux.color = "var(--azul-oscuro)";
     this.workerAux.name = "Alice";
+    this.workerAux.isHuman = true;
     this.workerAux.skills = [this.allSkills[0], this.allSkills[1]];
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--azul-claro)";
     this.workerAux.skills = [this.allSkills[0], this.allSkills[3]];
+    this.workerAux.isHuman = true;
     this.workerAux.name = "Bella";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--gris)";
     this.workerAux.skills = [this.allSkills[1], this.allSkills[2], this.allSkills[3]];
+    this.workerAux.isHuman = true;
     this.workerAux.name = "Debbie";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--rojo)";
     this.workerAux.skills = [this.allSkills[2], this.allSkills[3], this.allSkills[4]];
+    this.workerAux.isHuman = true;
     this.workerAux.name = "Frank";
     this.workers.push(this.workerAux);
 
@@ -73,20 +77,72 @@ export class WorkersService {
 
     this.workerAux = new Worker();
     this.workerAux.color = "var(--verde)";
+    this.workerAux.isHuman = true;
     this.workerAux.skills = [this.allSkills[0], this.allSkills[4]];
-    this.workerAux.name = "Gaby";
+    this.workerAux.name = "Gaby2";
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "brown";
     this.workerAux.skills = [this.allSkills[1], this.allSkills[3]];
     this.workerAux.name = "John";
+    this.workerAux.isHuman = true;
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
     this.workerAux.color = "green";
     this.workerAux.skills = [this.allSkills[2], this.allSkills[4]];
     this.workerAux.name = "George";
+    this.workerAux.isHuman = true;
+    this.workers.push(this.workerAux);
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "blue";
+    this.workerAux.skills = [this.allSkills[1], this.allSkills[4]];
+    this.workerAux.isHuman = false;
+    this.workerAux.name = "Robot1";
+    this.workers.push(this.workerAux);
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "red";
+    this.workerAux.skills = [this.allSkills[0]];
+    this.workerAux.isHuman = false;
+    this.workerAux.name = "Robot2";
+    this.workers.push(this.workerAux);
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "green";
+    this.workerAux.skills = [this.allSkills[1]];
+    this.workerAux.isHuman = false;
+    this.workerAux.name = "Robot3";
+    this.workers.push(this.workerAux);
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "brown";
+    this.workerAux.skills = [this.allSkills[2]];
+    this.workerAux.isHuman = false;
+    this.workerAux.name = "Robot4";
+    this.workers.push(this.workerAux);
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "blue";
+    this.workerAux.skills = [this.allSkills[3]];
+    this.workerAux.isHuman = false;
+    this.workerAux.name = "Robot5";
+    this.workers.push(this.workerAux);
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "black";
+    this.workerAux.skills = [this.allSkills[4]];
+    this.workerAux.isHuman = false;
+    this.workerAux.name = "Robot6";
+    this.workers.push(this.workerAux);
+
+    this.workerAux = new Worker();
+    this.workerAux.color = "blue";
+    this.workerAux.skills = [this.allSkills[1]];
+    this.workerAux.isHuman = false;
+    this.workerAux.name = "Robot7";
     this.workers.push(this.workerAux);
   }
 
