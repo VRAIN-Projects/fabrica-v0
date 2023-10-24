@@ -3,9 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WorkerComponent } from './components/home/worker/worker.component';
-import { ItemComponent } from './components/home/item/item.component';
-import { WorkersComponent } from './components/home/workers/workers.component';
+import { HumanComponent } from './components/home/human/human.component';
+import { HumansComponent } from './components/home/humans/humans.component';
 import { FactoryComponent } from './components/home/factory/factory.component';
 import { ActionComponent } from './components/home/action/action.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -17,13 +16,15 @@ import { SkillsComponent } from './components/home/skills/skills.component';
 import { HomeComponent } from './components/home/home.component';
 import { ConnectorComponent } from './components/home/connector/connector.component';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { RobotsComponent } from './components/home/robots/robots.component';
+import { ScrollBarComponent } from './components/home/scroll-bar/scroll-bar.component';
+import { RobotComponent } from './components/home/robot/robot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WorkersComponent,
-    WorkerComponent,
-    ItemComponent,
+    HumansComponent,
+    HumanComponent,
     FactoryComponent,
     SingleWorkerPlaceComponent,
     MultipleWorkerPlaceComponent,
@@ -33,6 +34,9 @@ import { NgxEchartsModule } from 'ngx-echarts';
     StatisticsComponent,
     HomeComponent,
     ConnectorComponent,
+    RobotsComponent,
+    ScrollBarComponent,
+    RobotComponent,
   ],
   imports: [
     BrowserModule,

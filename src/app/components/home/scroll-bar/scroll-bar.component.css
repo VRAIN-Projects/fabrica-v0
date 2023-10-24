@@ -1,13 +1,10 @@
-.workers {
+.scroll-bar {
     width: 100%;
     padding: 12px 12px 24px 12px;
 }
 
-.horizontal-scroll-workers {
+.horizontal-scroll-bar {
     display: flex;
     flex-wrap: nowrap;
 }
 
-.item {
-    margin: 0px 10px 0px 0px;
-}

@@ -4,10 +4,10 @@ import { Worker } from '../../../models/worker.model';
 
 @Component({
   selector: 'app-workers',
-  templateUrl: './workers.component.html',
-  styleUrls: ['./workers.component.css']
+  templateUrl: './humans.component.html',
+  styleUrls: ['./humans.component.css']
 })
-export class WorkersComponent {
+export class HumansComponent {
   workers: Worker[] = [];
 
   constructor(workerService: WorkersService){

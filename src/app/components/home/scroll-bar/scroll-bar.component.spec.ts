@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WorkerComponent } from './worker.component';
+import { ScrollBarComponent } from './scroll-bar.component';
 
-describe('WorkerComponent', () => {
-  let component: WorkerComponent;
-  let fixture: ComponentFixture<WorkerComponent>;
+describe('ScrollBarComponent', () => {
+  let component: ScrollBarComponent;
+  let fixture: ComponentFixture<ScrollBarComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [WorkerComponent]
+      declarations: [ScrollBarComponent]
     });
-    fixture = TestBed.createComponent(WorkerComponent);
+    fixture = TestBed.createComponent(ScrollBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

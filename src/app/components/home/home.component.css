@@ -1,11 +1,11 @@
-.workers {
+.scroll-bar {
     /*Fixed to bottom*/
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 1;
-    background-color: var(--azul-claro);
+    background-color: rgb(179, 239, 247);
     overflow-x: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; /* for iOS */

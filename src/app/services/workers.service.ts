@@ -94,8 +94,19 @@ export class WorkersService {
    return this.workers.filter(worker => worker.action == task);
   }
 
+  
   public getWorkers() : Worker[] {
     return this.workers;
+  }
+
+  //Get human workers
+  public getHumanWorkers() : Worker[] {
+    return this.workers.filter(worker => worker.isHuman == true);
+  }
+
+  //Get non-human workers
+  public getNonHumanWorkers() : Worker[] {
+    return this.workers.filter(worker => worker.isHuman == false);
   }
 
   public setChangingWorker(worker : Worker) {

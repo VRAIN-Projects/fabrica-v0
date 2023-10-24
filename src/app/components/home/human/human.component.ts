@@ -3,10 +3,10 @@ import { Worker } from '../../../models/worker.model';
 
 @Component({
   selector: 'app-worker',
-  templateUrl: './worker.component.html',
-  styleUrls: ['./worker.component.css']
+  templateUrl: './human.component.html',
+  styleUrls: ['./human.component.css']
 })
-export class WorkerComponent {
+export class HumanComponent {
   @Input() worker: Worker = new Worker();
   @Input() origin: boolean = false;
 
