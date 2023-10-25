@@ -15,6 +15,12 @@ export class StatisticsComponent implements OnInit{
       xAxis: {
         max: 'dataMax'
       },
+      grid: {
+        width: '80%',
+        height: '50%',
+        left: '10%',
+        top: '30%'
+      },
       yAxis: {
         type: 'category',
         data: ['Money Used', 'Quantity', 'Quality'],
