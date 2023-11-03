@@ -1,21 +1,9 @@
-.scroll-bar {
-    /*Fixed to bottom*/
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
+.side-bar {
     background-color: rgb(179, 239, 247);
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; /* for iOS */
 }
     
 .main {
     display:block;
-    overflow-y: scroll;
-    max-width: max-content;
-    height: calc(100vh - 200px);
 }
 
 

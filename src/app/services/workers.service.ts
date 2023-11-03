@@ -72,33 +72,6 @@ export class WorkersService {
     this.workers.push(this.workerAux);
 
     this.workerAux = new Worker();
-    this.workerAux.color = "var(--verde)";
-    this.workerAux.skills = [this.allSkills[0], this.allSkills[4]];
-    this.workerAux.name = "Gaby";
-    this.workers.push(this.workerAux);
-
-    this.workerAux = new Worker();
-    this.workerAux.color = "var(--verde)";
-    this.workerAux.isHuman = true;
-    this.workerAux.skills = [this.allSkills[0], this.allSkills[4]];
-    this.workerAux.name = "Gaby2";
-    this.workers.push(this.workerAux);
-
-    this.workerAux = new Worker();
-    this.workerAux.color = "brown";
-    this.workerAux.skills = [this.allSkills[1], this.allSkills[3]];
-    this.workerAux.name = "John";
-    this.workerAux.isHuman = true;
-    this.workers.push(this.workerAux);
-
-    this.workerAux = new Worker();
-    this.workerAux.color = "green";
-    this.workerAux.skills = [this.allSkills[2], this.allSkills[4]];
-    this.workerAux.name = "George";
-    this.workerAux.isHuman = true;
-    this.workers.push(this.workerAux);
-
-    this.workerAux = new Worker();
     this.workerAux.color = "blue";
     this.workerAux.skills = [this.allSkills[1], this.allSkills[4]];
     this.workerAux.isHuman = false;
@@ -124,27 +97,6 @@ export class WorkersService {
     this.workerAux.skills = [this.allSkills[2]];
     this.workerAux.isHuman = false;
     this.workerAux.name = "Robot4";
-    this.workers.push(this.workerAux);
-
-    this.workerAux = new Worker();
-    this.workerAux.color = "blue";
-    this.workerAux.skills = [this.allSkills[3]];
-    this.workerAux.isHuman = false;
-    this.workerAux.name = "Robot5";
-    this.workers.push(this.workerAux);
-
-    this.workerAux = new Worker();
-    this.workerAux.color = "black";
-    this.workerAux.skills = [this.allSkills[4]];
-    this.workerAux.isHuman = false;
-    this.workerAux.name = "Robot6";
-    this.workers.push(this.workerAux);
-
-    this.workerAux = new Worker();
-    this.workerAux.color = "blue";
-    this.workerAux.skills = [this.allSkills[1]];
-    this.workerAux.isHuman = false;
-    this.workerAux.name = "Robot7";
     this.workers.push(this.workerAux);
   }
 

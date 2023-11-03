@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ScrollBarComponent } from './scroll-bar.component';
+import { SideBarComponent } from './side-bar.component';
 
 describe('ScrollBarComponent', () => {
-  let component: ScrollBarComponent;
-  let fixture: ComponentFixture<ScrollBarComponent>;
+  let component: SideBarComponent;
+  let fixture: ComponentFixture<SideBarComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ScrollBarComponent]
+      declarations: [SideBarComponent]
     });
-    fixture = TestBed.createComponent(ScrollBarComponent);
+    fixture = TestBed.createComponent(SideBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

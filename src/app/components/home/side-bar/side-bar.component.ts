@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-scroll-bar',
-  templateUrl: './scroll-bar.component.html',
-  styleUrls: ['./scroll-bar.component.css']
+  selector: 'app-side-bar',
+  templateUrl: './side-bar.component.html',
+  styleUrls: ['./side-bar.component.css']
 })
-export class ScrollBarComponent {
+export class SideBarComponent {
   
   //It can be robots or humans
   optionToggleRobotsOrHumans: string = 'humans';

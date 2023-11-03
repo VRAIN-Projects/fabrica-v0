@@ -17,7 +17,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ConnectorComponent } from './components/home/connector/connector.component';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { RobotsComponent } from './components/home/robots/robots.component';
-import { ScrollBarComponent } from './components/home/scroll-bar/scroll-bar.component';
+import { SideBarComponent } from './components/home/side-bar/side-bar.component';
 import { RobotComponent } from './components/home/robot/robot.component';
 
 @NgModule({
@@ -35,7 +35,7 @@ import { RobotComponent } from './components/home/robot/robot.component';
     HomeComponent,
     ConnectorComponent,
     RobotsComponent,
-    ScrollBarComponent,
+    SideBarComponent,
     RobotComponent,
   ],
   imports: [
