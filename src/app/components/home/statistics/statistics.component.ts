@@ -17,7 +17,7 @@ export class StatisticsComponent implements OnInit{
       },
       grid: {
         width: '80%',
-        height: '50%',
+        height: '40%',
         left: '10%',
         top: '30%'
       },
@@ -28,7 +28,7 @@ export class StatisticsComponent implements OnInit{
         animationDuration: 300,
         animationDurationUpdate: 300,
         axisLabel: {
-          rotate: 90
+          rotate: 70
         },
         max: 2 // only the largest 3 bars will be displayed
       },
