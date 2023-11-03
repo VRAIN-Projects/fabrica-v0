@@ -19,7 +19,7 @@ export class StatisticsComponent implements OnInit{
         width: '80%',
         height: '40%',
         left: '10%',
-        top: '30%'
+        top: '5%'
       },
       yAxis: {
         type: 'category',
