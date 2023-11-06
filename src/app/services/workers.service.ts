@@ -25,19 +25,19 @@ export class WorkersService {
   private workers: Worker[] = [];
 
   private actions: Action[] = [
-    new Action(1, [this.allSkills[0]], 10, 10),
-    new Action(2, [this.allSkills[1], this.allSkills[3]], 10, 250),
-    new Action(3, [this.allSkills[0], this.allSkills[4]], 10, 450),
-    new Action(4, [this.allSkills[0], this.allSkills[1], this.allSkills[2]], 10, 700),
-    new Action(5, [this.allSkills[0], this.allSkills[1], this.allSkills[2]], 10, 900),
-    new Action(6, [this.allSkills[1]], 160, 125),
-    new Action(7, [this.allSkills[2]], 160, 570),
-    new Action(8, [this.allSkills[2]], 160, 900),
-    new Action(9, [this.allSkills[3]], 310, 10),
-    new Action(10, [this.allSkills[4]], 310, 260),
-    new Action(11, [this.allSkills[4]], 310, 700),
-    new Action(12, [this.allSkills[4]], 10, 1100),
-    new Action(13, [this.allSkills[4]], 160, 1100),
+    new Action(1, [this.allSkills[0]], 10, 0),
+    new Action(2, [this.allSkills[1], this.allSkills[3]], 10, 160),
+    new Action(3, [this.allSkills[0], this.allSkills[4]], 10, 320),
+    new Action(4, [this.allSkills[0], this.allSkills[1], this.allSkills[2]], 10, 480),
+    new Action(5, [this.allSkills[0], this.allSkills[1], this.allSkills[2]], 10, 640),
+    new Action(6, [this.allSkills[1]], 160, 65),
+    new Action(7, [this.allSkills[2]], 160, 370),
+    new Action(8, [this.allSkills[2]], 160, 640),
+    new Action(9, [this.allSkills[3]], 310, 0),
+    new Action(10, [this.allSkills[4]], 310, 160),
+    new Action(11, [this.allSkills[4]], 310, 480),
+    new Action(12, [this.allSkills[4]], 10, 800),
+    new Action(13, [this.allSkills[4]], 160, 800),
 
   ];
   
