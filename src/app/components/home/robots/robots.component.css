@@ -1,13 +1,14 @@
 .card {
     border-radius: 5px;
     background-color: #ffffff;
-    border: 1px solid #000000;
-    padding: 5px;
-    min-width: 200px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    min-width: 180px;
+
 }
 
 .skill-title {
     margin-top: 10px;
+}
+
+.skill-list {
+    display: inline-block;
 }
